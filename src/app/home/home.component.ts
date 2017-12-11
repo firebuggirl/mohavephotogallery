@@ -71,7 +71,7 @@ constructor(meta: Meta, title: Title) {
   {
   "url":"assets/img/highdesertlandscape.jpg",
   "title":"Joshua Trees",
-  "caption":"The Joshu Tree landscape."
+  "caption":"The Joshua Tree landscape."
   },
   {
   "url":"assets/img/pappyharrietsskyfire.jpg",
