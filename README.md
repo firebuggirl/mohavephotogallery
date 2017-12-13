@@ -40,3 +40,22 @@ https://medium.com/beautiful-angular/angular-2-and-environment-variables-59c57ba
 `ng build --env=prod` //will minify all files
 
 ` ng serve ` to start project
+
+## Deploy to Heroku:
+
+* Create a Heroku app in your project directory:
+  ` heroku create `
+
+* Move the angular-cli dependency from     devDependencies to dependencies in package.json
+
+* Create a postinstall script in your package.json which builds your project to a dist directory on your server:
+
+  ` ng build --aot -prod `
+
+* Install express:
+  ` npm install express --save `
+
+* Create a `server.js` file in the root of your  project and add code to serve the static files in your dist directory
+
+* Commit your work and push it to Heroku to deploy:
+  ` git push heroku master `

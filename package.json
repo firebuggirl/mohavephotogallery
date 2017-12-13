@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "ng build --env=prod && ngc",
     "start": "ts-node src/server.ts",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build --prod --aot=false"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "@angular/router": "^4.0.0",
     "angular-in-memory-web-api": "^0.3.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "rsjs": "^0.1.2",
     "rxjs": "^5.4.3",
     "zone.js": "^0.8.4"

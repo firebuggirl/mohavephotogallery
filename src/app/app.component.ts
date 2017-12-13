@@ -29,7 +29,7 @@ import { environment } from './../environments/environment';
 
 export class AppComponent implements OnInit {
 
-apiUrl = environment.apiUrl;
+//apiUrl = environment.apiUrl;
 
 constructor() {
 
