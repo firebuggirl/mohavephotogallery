@@ -43,9 +43,6 @@ https://medium.com/beautiful-angular/angular-2-and-environment-variables-59c57ba
 
 ## Deploy to Heroku:
 
-* Create a Heroku app in your project directory:
-  ` heroku create `
-
 * Move the angular-cli dependency from     devDependencies to dependencies in package.json
 
 * Create a postinstall script in your package.json which builds your project to a dist directory on your server:
@@ -56,6 +53,16 @@ https://medium.com/beautiful-angular/angular-2-and-environment-variables-59c57ba
   ` npm install express --save `
 
 * Create a `server.js` file in the root of your  project and add code to serve the static files in your dist directory
+
+* Create a Heroku app in your project directory:
+  ` heroku create angular-photo-gallery `
+
+* deploy from existing Github repo:
+    ` heroku git:remote -a mohavephotogallery `
+
+` heroku config:add NODE_ENV=production `
+
+
 
 * Commit your work and push it to Heroku to deploy:
   ` git push heroku master `
