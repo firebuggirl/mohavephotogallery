@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "prestart": "ng build --env=prod && ngc",
-    "start": "ts-node src/server.ts"
+    "start": "ts-node src/server.ts",
+    "postinstall": "ng build --aot -prod",
   },
   "private": true,
   "dependencies": {
