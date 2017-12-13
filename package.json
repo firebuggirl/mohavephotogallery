@@ -7,6 +7,9 @@
     "start": "ts-node src/server.ts",
     "postinstall": "ng build --prod --aot=false"
   },
+  "engines": {
+  "node": ">= 7.6.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.3.6",
